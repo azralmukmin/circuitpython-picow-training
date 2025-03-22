@@ -7,7 +7,7 @@ led.direction = digitalio.Direction.OUTPUT
 
 switch = digitalio.DigitalInOut(board.GP1)
 switch.direction = digitalio.Direction.INPUT
-switch.pull = Pull.UP
+switch.pull = digitalio.Pull.UP
 
 while True:
     if switch.value:
